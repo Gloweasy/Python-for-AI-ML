@@ -37,7 +37,7 @@ def parse_expression(expression):
 #History list to store all calculations
 history = []
 #welcome message
-print ("Welcome to Smart Calculator!\n")
+print ("\n Welcome to Glo-Smart Calculator!\n")
 
 #start the loop
 while True:
@@ -45,8 +45,7 @@ while True:
     num1, operator, num2 = parse_expression(user_input)
 
     if num1 is None or operator is None or num2 is None:
-        print("Invalid input format. Use: number operator number (e.g, 2 * 4)")
-
+        print("Ooops! Invalid input format. Use this format: number operator number (e.g, 2 * 4)")
     else:
         result = calculate(num1,operator, num2)
         print("Result: ", result)
@@ -55,10 +54,12 @@ while True:
     cont = input("\n Do you want to perform another calculation? (yes/no): ").lower()
     if cont != "yes":
         break
-
-    #print history before exiting
-    print("\n Calculation History: ")
-    for item in history:
-        print(" -", item)
-    print("\n Thank you for using the calculator")
     
+    print("\n Wow! I'm happy to hear that!\n")
+        
+#print history before exiting
+print("\n Calculation History: ")
+for item in history:
+    print(" -", item)
+print("\n Thank you for using Glo-Smart calculator!\n")
+print(" Have a nice day!😊\n")

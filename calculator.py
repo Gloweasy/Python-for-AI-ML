@@ -47,7 +47,7 @@ while True:
     if num1 is None or operator is None or num2 is None:
         print("Ooops! Invalid input format. Use this format: number operator number (e.g, 2 * 4)")
     else:
-        result = calculate(num1,operator, num2)
+        result = calculate(num1, operator, num2)
         print("Result: ", result)
         history.append(f"{num1} {operator} {num2} = {result}") 
 
